@@ -1,0 +1,31 @@
+{
+  "extraKnownMarketplaces": {
+    "jpchauny-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "jpchauny/claude-plugins"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "development-methodology@jpchauny-plugins": true,
+    "utilities@jpchauny-plugins": true,
+    "acceptance-management@jpchauny-plugins": true
+  },
+  "permissions": {
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git * commit *)",
+      "Bash(git * push *)"
+    ],
+    "deny": [
+      "Read(//**/clean-language-compiler/**)",
+      "Edit(//**/clean-language-compiler/**)",
+      "Read(//**/clean-host-core/**)",
+      "Edit(//**/clean-host-core/**)",
+      "Read(//**/clean-server/**)",
+      "Edit(//**/clean-server/**)"
+    ]
+  }
+}
